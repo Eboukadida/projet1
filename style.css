@@ -7,8 +7,8 @@
 }
 
 :root {
-  --Blanc: #FFFFFF;
-  --BleuSombre: #152237;
+    --Blanc: #FFFFFF;
+    --BleuSombre: #152237;
 }
 
 .gap22 {
@@ -148,7 +148,7 @@ input {
 
 /* hero  */
 .sectionHero {
-    background-image: linear-gradient(120deg, rgba(68, 221, 138, 1) 19%, rgba(21, 183, 226, 0.2) 100%), url("ressources/bg-header.png");
+    background-image: linear-gradient(120deg,rgba(68, 221, 138, 1) 0%, rgba(21, 183, 226, 0.55) 50%), url("ressources/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -169,6 +169,9 @@ input {
 
 /* formations populaires  */
 .FormPopulaires {
+    img{
+        width: 100%;
+    }
     h3 {
         font-size: 36px;
         font-weight: 800;
@@ -198,15 +201,35 @@ input {
     padding: 5px 10px 5px 10px;
     bottom: 120px;
     right: 65px;
-    span{
+
+    span {
         font-size: 10px;
         font-weight: 100;
         margin-left: 5px;
         text-decoration: line-through;
-        text-decoration-thickness: 0,5px;
+        text-decoration-thickness: 0, 5px;
         color: var(--Blanc);
     }
 }
 
-
 /* formations recente  */
+
+
+.coupeSection {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--Blanc);
+}
+
+.FormRecente{
+    background-color: var(--BleuSombre);
+}
+
+
+
+
+
+/* 
+mettre position prix sur l'img 
+voir probleme flexbox card
+*/

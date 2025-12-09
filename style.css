@@ -5,6 +5,9 @@
     font-family: "Montserrat", sans-serif;
     color: var(--BleuSombre);
 }
+html{
+    scroll-behavior: smooth;
+}
 
 :root {
     --Blanc: #FFFFFF;
@@ -72,8 +75,6 @@
     align-items: flex-end;
 }
 
-
-
 .CTA {
     background: #44DD8A;
     background: linear-gradient(90deg, rgba(68, 221, 138, 1) 19%, rgba(21, 183, 226, 1) 100%);
@@ -115,7 +116,6 @@ header {
         color: var(--Blanc);
         font-size: 18px;
     }
-
     nav {
         max-width: 90%;
     }
@@ -145,10 +145,22 @@ input {
     margin-right: 20px;
 }
 
+#searchBar {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 477px;
+      i {
+        position: absolute;
+        right: 100px;
+        color: var(--Blanc);
+        pointer-events: none;
+      }
+    }
 
 /* hero  */
 .sectionHero {
-    background-image: linear-gradient(120deg,rgba(68, 221, 138, 1) 0%, rgba(21, 183, 226, 0.55) 50%), url("ressources/bg-header.png");
+    background: linear-gradient(94deg, rgba(68, 221, 138, 0.80) 3.11%, rgba(21, 183, 226, 0.80) 98.45%), url("ressources/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -189,7 +201,7 @@ input {
 
 /* bulle prix */
 .PrixForm {
-    position: absolute;
+    
     transform: translate(50%, 50%);
     color: var(--Blanc);
     font-weight: bold;
@@ -212,6 +224,10 @@ input {
     }
 }
 
+.test{
+    z-index: -1;
+}
+
 /* formations recente  */
 
 
@@ -221,11 +237,14 @@ input {
     color: var(--Blanc);
 }
 
+
 .FormRecente{
     background-color: var(--BleuSombre);
 }
 
 
+
+/* formations recente  */
 
 
 

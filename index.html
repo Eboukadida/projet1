@@ -2,127 +2,317 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klivio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
-        <nav class="flex justify-between align-center container-1000">
+        <div class="flex justify-between align-center container-1500">
+            <img src="assets/logo.png" alt="Logo de Klivio">
+            <i class="fa fa-bars fa-2x" id="burger"></i>
+
+            <p>
+                Les formations
+            </p>
+
+            <div id="searchBar">
+                <input type="search" placeholder="Rechercher" />
+                <i class="fa fa-search"></i>
+            </div>
+
             <div>
-                <img a href="logo" src="ressources/logo.png" alt="logo du site"/>
+                <a class="CtaHeader2" href="">Connexion</a>
+                <a class="CtaHeader1" href="">Inscription</a>
             </div>
-            <div>
-                <p>Les formations</p>
-            </div>
-            <div>
-                <div id="searchBar">
-                    <input type="search" placeholder="Recherche"/>
-                    <i class="fa fa-search"></i>
-                </div>
-            </div>
-            <div class="flex gap22">
-                <a class="CTA2" href="">Connexion</a>
-                <a class="CTA" href="">Inscription</a>
-            </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- section hero -->
+    <!-- Hero -->
     <main>
 
 
-        <section class="sectionHero align-content">
-            <div class="flex flex-direction align-center gap22">
-                <div class="marginT70">
-                    <h2>KLIVIO, L’ALLIÉ DE VOTRE PROGRESSION</h2>
-                </div>
+        <section class="Hero flex flex-column align-center justify-center gap22">
+            <h2 class="small-6">
+                KLIVIO, L’ALLIÉ DE VOTRE PROGRESSION
+            </h2>
 
-                <div>
-                    <h1>LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h1>
-                </div>
+            <h1>
+                LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL
+            </h1>
 
-                <div>
-                    <a class="CTA2" href="">En savoir plus</a>
-                </div>
-            </div>
+            <a class="CtaHero1" href="">En savoir plus</a>
+
         </section>
 
 
+        <!-- Les formations populaires -->
 
-        <!-- section Les formations populaires -->
-        <section class="FormPopulaires container-1000">
-            <h3 class="marginT70">
+        <section class="FormPop container-1500">
+
+            <h3 class="marginT50">
                 Les formations populaires
             </h3>
 
-            <div class="flex justify-between marginT70">
+
+            <div class="flex justify-between">
 
 
                 <!-- Card 1 -->
-                <div class="cardPopulaires">
+                <div class="cardPop marginT50 large-2">
+                    <img src="assets/img-course.png" alt="">
+                    <h4 class="marginT10">Parler en public</h4>
+                    <p class="marginT10">Sonia Lefèvre | Coach prise de parole</p>
 
-                    <p class="PrixForm flex align-center">
-                        15,99€ <span>60€</span>
-                    </p>
-
-                    <img class="test" src="ressources/img-course.png" alt="image de course">
-
-                    <div class="flex flex-direction gap10 textCard">
-                        <h4 class="marginT20">
-                            Gérer son temps
-                        </h4>
-                        <p>
-                            Claire Dumas | Coach organisation
-                        </p>
-                        <img src="" alt="">
-                        <p>
-                            Optimisez vos journées et gagnez en efficacité
-                        </p>
+                    <div class="marginT5">
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
                     </div>
+
+                    <p class="marginT5">Gagnez en aisance et captez votre auditoire</p>
                 </div>
 
-                <!-- Card 2 -->
+                <!-- Card 1 -->
+                <div class="cardPop marginT50 large-2">
+                    <img src="assets/img-course.png" alt="">
+                    <h4 class="marginT10">Gérer le stress</h4>
+                    <p class="marginT10">Lucie Garnier | Formatrice</p>
 
+                    <div class="marginT5">
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc80030;"></i>
+                    </div>
 
+                    <p class="marginT5">Apprenez à rester serein face aux défis</p>
+                </div>
 
-                <!-- Card 3 -->
+                <!-- Card 1 -->
+                <div class="cardPop marginT50 large-2">
+                    <img src="assets/img-course.png" alt="">
+                    <h4 class="marginT10">Travailler en équipe</h4>
+                    <p class="marginT10">David Moreau | Expert</p>
 
+                    <div class="marginT5">
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                    </div>
 
-                <!-- Card 4 -->
+                    <p class="marginT5">Collaborez efficacement, même à distance</p>
+                </div>
 
-                
+                <!-- Card 1 -->
+                <div class="cardPop marginT50 large-2">
+                    <img src="assets/img-course.png" alt="">
+                    <h4 class="marginT10">Gérer son temps</h4>
+                    <p class="marginT10">Claire Dumas | Coach organisation</p>
 
+                    <div class="marginT5">
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc80045;"></i>
+                    </div>
+
+                    <p class="marginT5">Optimisez vos journées et gagnez en efficacité</p>
+                </div>
             </div>
 
-            <div class="flex justify-center">
-                <a class="CTA3" href="">Voir plus de formations</a>
+            <!-- CTA Voir plus de formations -->
+            <div class="flex justify-center marginT50">
+                <a class="CtaFormPlus" href="">Voir plus de formations</a>
             </div>
-
         </section>
 
 
 
         <!-- Les formations récentes -->
-        <section class="FormRecente marginT70">
+        <section class="FormRecente marginT50 paddingB50">
+            <div class="container-1500">
+                <h3 class="marginT50">
+                    Les formations populaires
+                </h3>
 
-            <!-- Coupe section  -->
-
-            <h3 class="marginT70 container-1000 coupeSection">
-                Les formations récentes
-            </h3>
-
-
-            <!-- Card 1 -->
+                <div class="flex justify-between">
 
 
+                    <!-- Card 1 -->
+                    <div class="cardRecente marginT50 large-2">
+                        <img src="assets/img-course.png" alt="">
+                        <h4 class="marginT10">Mieux communiquer</h4>
+                        <p class="marginT10">Julien Martel | Coach en comm.</p>
+
+                        <div class="marginT5">
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                        </div>
+
+                        <p class="marginT5">Améliorez vos échanges et votre impact relationnel</p>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="cardRecente marginT50 large-2">
+                        <img src="assets/img-course.png" alt="">
+                        <h4 class="marginT10">Maîtriser ses émotions</h4>
+                        <p class="marginT10">Amel Benali | Psy. du travail</p>
+
+                        <div class="marginT5">
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                        </div>
+
+                        <p class="marginT5">Développez calme et intelligence émotionnelle</p>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="cardRecente marginT50 large-2">
+                        <img src="assets/img-course.png" alt="">
+                        <h4 class="marginT10">Résoudre les problèmes</h4>
+                        <p class="marginT10">Thomas Rivière | Expert</p>
+
+                        <div class="marginT5">
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc80045;"></i>
+                        </div>
+
+                        <p class="marginT5">Analysez, décidez et trouvez des solutions durables</p>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="cardRecente marginT50 large-2">
+                        <img src="assets/img-course.png" alt="">
+                        <h4 class="marginT10">Leadership positif</h4>
+                        <p class="marginT10">Marc Nguyen | Consultant</p>
+
+                        <div class="marginT5">
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc700;"></i>
+                            <i class="fa fa-star" style="color: #ffc80045;"></i>
+                        </div>
+
+                        <p class="marginT5">Inspirez, motivez et fédérez votre équipe</p>
+                    </div>
+                </div>
+            </div>
 
 
+            <!-- CTA Voir plus de formations -->
+            <div class="flex justify-center marginT50">
+                <a class="CtaFormRecente" href="">Voir plus de formations</a>
+            </div>
+        </section>
+
+
+        <!-- Avis clients -->
+
+        <section class="SectionAvis marginT50">
+            <div class="flex align-center justify-center">
+                <h2>AVIS CLIENTS</h2>
+            </div>
+
+            <div class="flex justify-around marginT50 container-1500">
+
+
+
+                <!-- Card Avis 1 -->
+                <div class="CardAvis">
+                    <img src="assets/juliette.png" alt="">
+                    <h4 class="marginT5">Juliette</h4>
+                    <div class="marginT5">
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                    </div>
+                    <p class="marginT5">
+                        J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets
+                        pratiques
+                        qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression
+                        est
+                        motivante — parfait pour se former en autonomie.
+                    </p>
+                </div>
+
+                <!-- Card Avis 2 -->
+                <div class="CardAvis">
+                    <img src="assets/camille.png" alt="">
+                    <h4>Camille</h4>
+                    <div class="marginT5">
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                        <i class="fa fa-star" style="color: #ffc700;"></i>
+                    </div>
+                    <p class="marginT5">
+                        Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
+                    </p>
+                </div>
+
+
+
+                 <!-- faire les alt et le responsive-->
+
+
+            </div>
 
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

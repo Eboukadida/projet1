@@ -10,8 +10,9 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a,li {
     text-decoration: none;
+    list-style: none;
 }
 
 /*--------------------------------------------------
@@ -102,6 +103,14 @@ Mise en page flex
 
 .gap22 {
     gap: 22px;
+}
+
+.gap10{
+    gap: 10px;
+}
+
+.W50{
+    width: 700px;
 }
 
 /*--------------------------------------------------
@@ -431,7 +440,6 @@ header {
     background-color: var(--BleuSombre);
     height: 9vh;
     align-content: center;
-
     input {
         padding: 12px 16px;
         width: 477px;
@@ -638,3 +646,60 @@ Section avis
 /*--------------------------------------------------
 Section Avantages
 ---------------------------------------------------*/
+
+.avantages{
+    background-color: #F5F5F5;
+    padding-bottom: 70px;
+    padding: 150px 0px;
+
+    h2{
+        font-size: 40px;
+        font-weight: 900;
+        
+    }
+
+    p{
+        font-size: 24px;
+        font-weight: 100;
+        white-space: normal;
+        
+    }
+
+    img{
+        width: 600px;
+    }
+}
+
+
+
+/*--------------------------------------------------
+Section Créez vos formations
+avec Klivio
+---------------------------------------------------*/
+
+
+.NewForm{
+    background-color: #44DD8A;
+    padding-bottom: 70px;
+    padding: 150px 0px;
+
+    h2{
+        font-size: 40px;
+        font-weight: 900;
+        
+    }
+
+    p{
+        font-size: 24px;
+        font-weight: 100;
+        white-space: normal;
+        
+    }
+
+    img{
+        width: 600px;
+    }
+}
+
+
+

@@ -612,6 +612,18 @@ Hero
 
 }
 
+@media (max-width: 350px) {
+    .Hero {
+        h2 {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 13px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 1353px) {
 
@@ -924,6 +936,10 @@ Section Créez vos formations avec Klivio
 À propos de Klivio 
 ---------------------------------------------------*/
 
+.Apropos{
+    background-color: #F5F5F5;
+}
+
 .Gauche {
 
     width: 40%;
@@ -1038,3 +1054,15 @@ Nous contacter
 /*--------------------------------------------------
 Footer
 ---------------------------------------------------*/
+
+@media (max-width: 350px) {
+    .Hero {
+        h2 {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 13px;
+        }
+    }
+}

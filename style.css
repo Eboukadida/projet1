@@ -43,6 +43,14 @@ Container et responsive
     padding: 16px;
 }
 
+.container-1200 {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
 .responsive {
     /*Les images doivent d'adapter a leur parents*/
     width: 100%;
@@ -440,6 +448,15 @@ Boutons
     color: var(--BleuSombre);
 }
 
+.CtaContact {
+    border-radius: 6px;
+    background: #44DD8A;
+    padding: 15px 0px;
+    width: 40%;
+    color: var(--BleuSombre);
+    text-align: center;
+}
+
 /*--------------------------------------------------
 Header
 ---------------------------------------------------*/
@@ -558,12 +575,15 @@ Hero
         display: block;
 
     }
+
 }
 
 @media (min-width: 1100px) {
     #burger {
         display: none;
     }
+
+
 }
 
 @media screen and (max-width: 733px) {
@@ -579,7 +599,6 @@ Hero
 
     }
 
-    .SectionAvis {}
 
     .CardAvis {
 
@@ -589,6 +608,134 @@ Hero
         }
     }
 
+
+
+}
+
+
+@media screen and (max-width: 1353px) {
+
+    .containerAvantage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+
+
+        h2 {
+            text-align: center;
+        }
+
+        .img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .CardAvantage {
+        justify-content: center;
+        display: contents;
+    }
+
+
+
+    .containerReverse {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .OrderTitre {
+        order: 1;
+        text-align: center;
+
+    }
+
+    .OrderImg {
+        order: 2;
+    }
+
+    .OrderList {
+        order: 3;
+    }
+
+    .Apropos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+
+        .Gauche {
+            padding: 50px 0px;
+            width: 90%;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .Droite {
+            width: 100%;
+        }
+    }
+
+
+
+
+}
+
+@media (max-width: 500px) {
+    .Contact h2 {
+        border-bottom: none !important;
+        padding-bottom: 0;
+    }
+
+
+    .NomEmail {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 20px;
+
+        input {
+            width: 100% !important;
+            box-sizing: border-box;
+        }
+    }
+
+    .Message {
+        input {
+            margin-top: 0;
+            margin-top: 20px;
+        }
+    }
+
+
+    .CtaContact {
+        width: 100%;
+    }
+
+    .LigneVerte {
+        background: linear-gradient(90deg, #44DD8A 0%, #3BD0A2 100%) !important;
+    }
+}
+
+@media (min-width: 1353px) {
+    .CardAvantage {
+        width: 45%;
+    }
+}
+
+.titreDynamic::before {
+    content: "CRÉEZ VOS FORMATIONS AVEC KLIVIO";
+}
+
+@media (max-width: 1353px) {
+    .titreDynamic::before {
+        content: "CRÉEZ VOS FORMATIONS";
+    }
 }
 
 
@@ -728,12 +875,9 @@ Section Avantages
         margin-top: 20px;
     }
 
-
-    .CardAvantage {
-        width: 45%;
+    img {
+        display: inline;
     }
-
-
 
 }
 
@@ -742,9 +886,9 @@ Section Créez vos formations avec Klivio
 ---------------------------------------------------*/
 
 
-.NewForm {
+.Creation {
     background-color: #44DD8A;
-    padding: 150px 0px;
+    padding: 50px 0px;
 
     h2 {
         color: var(--BleuSombre);
@@ -754,27 +898,143 @@ Section Créez vos formations avec Klivio
         line-height: 36px;
         letter-spacing: -0.6px;
         text-transform: uppercase;
-
     }
 
     p {
         font-size: 24px;
         font-weight: 100;
 
+
+
     }
+
 
     li {
         display: flex;
         margin-top: 20px;
     }
 
-
-    .CardForm {
-        width: 45%;
+    img {
+        display: inline;
     }
 
 }
 
 /*--------------------------------------------------
 À propos de Klivio 
+---------------------------------------------------*/
+
+.Gauche {
+
+    width: 40%;
+    text-align: start;
+
+    h2 {
+        color: var(--BleuSombre);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: -0.6px;
+    }
+
+    p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.27px;
+    }
+}
+
+.Droite {
+    background-color: var(--BleuSombre);
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        padding: 50px;
+        object-fit: contain;
+    }
+}
+
+
+/*--------------------------------------------------
+Nous contacter
+---------------------------------------------------*/
+
+
+
+.Contact {}
+
+.TitreContact {
+    width: 100%;
+
+    h2 {
+        color: var(--BleuSombre);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: -0.6px;
+        padding-bottom: 20px;
+        border-bottom: #44DD8A solid 1px;
+    }
+}
+
+.NomEmail {
+
+    input {
+        width: 45%;
+        height: 45px;
+        background-color: var(--BleuSombre);
+        color: var(--Blanc);
+        box-sizing: border-box;
+        padding-left: 5px;
+
+    }
+
+    input::placeholder {
+        color: var(--Blanc);
+    }
+
+
+}
+
+.Message {
+    input {
+        width: 100%;
+        height: 200px;
+        background-color: var(--BleuSombre);
+        color: var(--Blanc);
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 160px;
+        box-sizing: border-box;
+    }
+
+    input::placeholder {
+        color: var(--Blanc);
+    }
+}
+
+
+.LigneVerte {
+    width: 100%;
+    height: 18px;
+    background: linear-gradient(90deg, #44DD8A 2.38%, #18A0FB 100%);
+}
+
+
+
+
+/*--------------------------------------------------
+Footer
 ---------------------------------------------------*/

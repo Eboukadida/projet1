@@ -609,6 +609,18 @@ Hero
     }
 
 
+    .etoileAvis {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 5px;
+    }
+
+    .titleAvis {
+        text-align: center;
+    }
+
+
 
 }
 
@@ -636,6 +648,7 @@ Hero
 
         h2 {
             text-align: center;
+
         }
 
         .img {
@@ -649,6 +662,8 @@ Hero
     .CardAvantage {
         justify-content: center;
         display: contents;
+
+
     }
 
 
@@ -693,8 +708,6 @@ Hero
     }
 
 
-
-
 }
 
 @media (max-width: 500px) {
@@ -702,6 +715,18 @@ Hero
         border-bottom: none !important;
         padding-bottom: 0;
     }
+
+    .CardAvantage {
+        ul {
+            margin: 0;
+        }
+
+        h2{
+            line-height: 1.5 !important;
+        }
+
+    }
+
 
 
     .NomEmail {
@@ -830,7 +855,7 @@ Les formations récentes
 .FormRecente {
     background-color: var(--BleuSombre);
 
-    span{
+    span {
         background-color: var(--Blanc) !important;
         color: var(--BleuSombre) !important;
     }
@@ -868,6 +893,7 @@ Section avis
 ---------------------------------------------------*/
 
 .SectionAvis {
+    padding-bottom: 50px;
     h2 {
         font-size: 40px;
         font-weight: 900;
@@ -902,7 +928,7 @@ Section Avantages
 
 .avantages {
     background-color: #F5F5F5;
-    padding: 150px 0px;
+    padding: 50px 0px;
 
     h2 {
         color: var(--BleuSombre);
@@ -947,9 +973,9 @@ Section Créez vos formations avec Klivio
         font-size: 40px;
         font-style: normal;
         font-weight: 900;
-        line-height: 36px;
+        line-height: 1.2;
         letter-spacing: -0.6px;
-        text-transform: uppercase;
+        
     }
 
     p {
@@ -1049,8 +1075,9 @@ Nous contacter
         background-color: var(--BleuSombre);
         color: var(--Blanc);
         box-sizing: border-box;
-        padding-left: 5px;
+        padding-left: 15px;
         border: none;
+        font-weight: 100;
     }
 
     input::placeholder {
@@ -1067,11 +1094,12 @@ Nous contacter
         background-color: var(--BleuSombre);
         color: var(--Blanc);
         text-align: left;
-        padding-top: 15px;
+        padding-top: 5px;
         padding-left: 15px;
         padding-bottom: 160px;
         box-sizing: border-box;
         border: none;
+        font-weight: 100;
     }
 
     input::placeholder {
@@ -1089,5 +1117,6 @@ Nous contacter
 /*--------------------------------------------------
 Footer
 ---------------------------------------------------*/
+
 
 

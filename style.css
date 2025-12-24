@@ -787,6 +787,41 @@ Les formations populaires
 
 }
 
+.containerImg {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+.bullePrix {
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    background-color: var(--BleuSombre);
+    color: var(--Blanc);
+    padding: 5px 12px;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 16px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.AncienPrix {
+    font-size: 10px;
+    font-weight: 100;
+    margin-left: 5px;
+    text-decoration: line-through;
+    text-decoration-thickness: 0, 5px;
+}
+
 
 /*--------------------------------------------------
 Les formations récentes
@@ -794,6 +829,11 @@ Les formations récentes
 
 .FormRecente {
     background-color: var(--BleuSombre);
+
+    span{
+        background-color: var(--Blanc) !important;
+        color: var(--BleuSombre) !important;
+    }
 
     h3 {
         font-size: 36px;
@@ -936,7 +976,7 @@ Section Créez vos formations avec Klivio
 À propos de Klivio 
 ---------------------------------------------------*/
 
-.Apropos{
+.Apropos {
     background-color: #F5F5F5;
 }
 
@@ -986,9 +1026,6 @@ Nous contacter
 ---------------------------------------------------*/
 
 
-
-.Contact {}
-
 .TitreContact {
     width: 100%;
 
@@ -1013,7 +1050,7 @@ Nous contacter
         color: var(--Blanc);
         box-sizing: border-box;
         padding-left: 5px;
-
+        border: none;
     }
 
     input::placeholder {
@@ -1034,6 +1071,7 @@ Nous contacter
         padding-left: 15px;
         padding-bottom: 160px;
         box-sizing: border-box;
+        border: none;
     }
 
     input::placeholder {
@@ -1055,14 +1093,4 @@ Nous contacter
 Footer
 ---------------------------------------------------*/
 
-@media (max-width: 350px) {
-    .Hero {
-        h2 {
-            font-size: 25px;
-        }
 
-        h1 {
-            font-size: 13px;
-        }
-    }
-}

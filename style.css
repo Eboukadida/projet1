@@ -16,7 +16,6 @@ li {
     list-style: none;
 }
 
-
 /*--------------------------------------------------
 Variables
 ----------------------------------------------------*/
@@ -25,7 +24,6 @@ Variables
     --BleuSombre: #152237;
     --gap: 32px;
 }
-
 
 /*--------------------------------------------------
 Container et responsive
@@ -288,16 +286,7 @@ Largeurs et colonnes
 }
 
 /*--------------------------------------------------
-Styliser du texte
----------------------------------------------------*/
-
-
-
-
-
-
-/*--------------------------------------------------
-Margins and paddings ... don't abuse ! 
+Margins and paddings
 ---------------------------------------------------*/
 .mt-64 {
     margin-top: 64px;
@@ -797,7 +786,7 @@ Hero
 
 @media screen and (max-width: 825px) {
 
-    #footerMobile {
+    .footerMobile {
         display: none;
     }
 
@@ -808,11 +797,15 @@ Hero
         gap: 50px;
     }
 
+    .footerCenter{
+        text-align: center;
+    }
 
-
+    #contactMobile{
+        margin-left: 40px;
+    }
 
 }
-
 
 /*--------------------------------------------------
 Les formations populaires

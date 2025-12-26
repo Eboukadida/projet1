@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset */
 * {
     margin: 0;
@@ -863,8 +865,11 @@ Les formations populaires
     color: var(--Blanc);
     padding: 5px 12px;
     border-radius: 100px;
-    font-weight: 900;
-    font-size: 16px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.3px;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -874,8 +879,9 @@ Les formations populaires
     font-size: 10px;
     font-weight: 100;
     margin-left: 5px;
-    text-decoration: line-through;
-    text-decoration-thickness: 0, 5px;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 0.5px;
+    
 }
 
 
